@@ -1,0 +1,18 @@
+{
+  "name": "satranc-adasi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Satranç Adası – 4–7 yaş için satranç taşlarını öğreten oyun",
+  "scripts": {
+    "sync": "cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.3",
+    "@capacitor/core": "8.5.3",
+    "@capgo/native-purchases": "8.9.6",
+    "@capacitor/app": "8.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.3"
+  }
+}

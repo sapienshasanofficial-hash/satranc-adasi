@@ -1,0 +1,60 @@
+name: Android derlemesi
+
+# İmzasız Play paketi (.aab) ve telefonda denemek için hata ayıklama paketi (.apk) üretir.
+# .aab yükleme anahtarıyla bu depo DIŞINDA imzalanır; anahtar hiçbir zaman GitHub'a konmaz.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Bağımlılıklar
+        run: npm ci
+
+      - name: Web dosyalarını Android projesine kopyala
+        run: npx cap sync android
+
+      - name: Derle
+        working-directory: android
+        env:
+          VERSION_CODE: ${{ github.run_number }}
+        run: |
+          chmod +x gradlew
+          ./gradlew --no-daemon bundleRelease assembleDebug
+
+      - name: Çıktıları derlemeler dalına koy
+        run: |
+          mkdir cikti
+          cp android/app/build/outputs/bundle/release/app-release.aab cikti/satranc-adasi-imzasiz.aab
+          cp android/app/build/outputs/apk/debug/app-debug.apk cikti/satranc-adasi-deneme.apk
+          printf 'derleme=%s\nversionCode=%s\nkaynak=%s\n' "${{ github.run_number }}" "${{ github.run_number }}" "${{ github.sha }}" > cikti/SURUM.txt
+          cd cikti
+          git init -q -b derlemeler
+          git add .
+          git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" commit -q -m "Derleme ${{ github.run_number }}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" derlemeler
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: satranc-adasi-${{ github.run_number }}
+          path: cikti/
+          retention-days: 14

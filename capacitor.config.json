@@ -1,0 +1,10 @@
+{
+  "appId": "com.satrancadasi",
+  "appName": "Satranç Adası",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": false
+  }
+}
