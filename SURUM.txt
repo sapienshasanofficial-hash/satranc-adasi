@@ -1,0 +1,3 @@
+derleme=1
+versionCode=1
+kaynak=34e5909a68f6e20737cadad0d46dc25622b8d139
