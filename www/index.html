@@ -416,14 +416,14 @@ var TXT={
     saveFail:"Veriler bu tarayıcıda kaydedilemiyor (gizli pencere ya da dolu depolama olabilir). Oturum bitmeden verileri kopyalayıp saklayın.",hk_title:"Nasıl yardım ettiniz?",hk_repeat:"Yönergeyi tekrarladım",hk_touch:"Dokunmaya yardım ettim",hk_chess:"Satranç ipucu verdim",hk_late:function(n){return "Az önceki cevaptan önce yardım etmiştim (soru "+n+")";},hk_lateWhich:"O cevaptan önce nasıl yardım ettiniz?",
     gateWait:"Yanlış cevap. Lütfen biraz bekleyin, sonra yeniden deneyin.",stepsAria:function(m,p){return "Senin adımların: "+m+". Taç için hedef: "+p+".";},langT:"Dil",restoreT:"Verileri geri yükle",restoreP:"Daha önce kopyaladığınız oyuncu verisini buraya yapıştırın ya da dosyadan seçin. Yeni bir profil olarak eklenir.",restoreFile:"Dosyadan seç",restoreBtn:"Geri yükle",restoreBad:"Bu, Satranç Adası verisine benzemiyor. Kopyaladığınız metnin tamamını yapıştırın.",restoreOk:function(n,k){return n+" geri yüklendi ("+k+" bölüm). Profil seçildi.";},a_star:"deniz yıldızı",a_rock:"kaya",a_ghost:"gölge",a_flag:"bayrak",a_can:"gidilebilir",
     helpL:{tapPiece:"Taşa dokunarak",afterError:"Hatadan sonra",hintDots:"İpucu: kareler",hintHand:"İpucu: el"},level:"Bölüm",locked:"kilitli",
-    palace:"Hazine Mağarası",full:"Tam sürüm",palaceSub:"Rakip taşlar ve mini maçlar",
+    palace:"Hazine Mağarası",full:"Tam sürüm",palaceSub:"Rakip taşlar ve mini maçlar",battle:"Piyon Savaşı",bt_sub:"Karşıya ilk ulaşan kazanır",bt_lv:["Kolay","Orta","Zor"],bt_vs:function(n){return "Rakip: "+n;},bt_you:"Sıra sende",bt_bot:"Rakibin sırası",bt_intro:"Piyon savaşı! Piyonlarını karşı tarafa yürüt. Oraya ilk ulaşan kazanır!",bt_pick:"Önce pembe piyonlarından birine dokun.",bt_notYours:"O rakibin piyonu! Sen pembe piyonlarla oynuyorsun.",bt_wDiag:"Çapraza sadece orada rakip bir piyon varsa gidebilirim.",bt_stuckPawn:"Bu piyon şimdi yürüyemiyor. Başka bir piyon seç.",bt_cap:"Yakaladım!",bt_lostOne:"Eyvah, bir piyonumuz gitti! Dikkatli olalım.",bt_win:"Kazandık! Karşı tarafa ilk biz ulaştık!",bt_winAll:"Kazandık! Rakibin bütün piyonlarını yakaladık!",bt_lose:"Bu sefer rakip kazandı. Hadi bir daha deneyelim!",bt_draw:"Yürüyecek yer kalmadı. Berabere!",bt_passMe:"Piyonlarımız şimdi yürüyemiyor. Sıra yine rakipte.",bt_passBot:"Rakip yürüyemiyor. Sıra yine bizde!",bt_winT:"Kazandın!",bt_loseT:"Bir daha deneyelim!",bt_drawT:"Berabere!",bt_next:"Sonraki rakip",a_mine:"senin piyonun",a_rival:"rakip piyon",
     restart:"Baştan",moves:"Hamle",climb:"En üste çık",again:"Tekrar",next:"Sonraki",toMap:"Haritaya dön",
     wins:["Aferin!","Çok iyi!","Harika!"],
     best:function(n){return n+" hamlede bitirdin. Daha kısası yok!";},
     more:function(n,p){return n+" hamlede bitirdin. "+p+" hamlede bitirirsen üç yıldız kazanırsın.";},
     caught:"Yakaladım! Şimdi ileri yürüyebilirim.",promoted:"Yaşasın! Vezire dönüştüm!",
     gateT:"Ebeveyn alanı",gateP:"Bu bölüm yetişkinler için. Devam etmek için soruyu yanıtlayın.",cancel:"Vazgeç",
-    perks:["Vezir, Şah, At ve Piyon dünyaları: {n} bölüm daha","Tek seferlik ödeme, abonelik yok","Reklamsız, internetsiz oynanır","Gelecek dünyalar ücretsiz eklenir"],later:"Sonra",demoUnlock:"Kilidi aç (deneme)",soon:"Yakında",
+    perks:["Vezir, Şah, At ve Piyon dünyaları: {n} bölüm daha","Piyon Savaşı'nda iki rakip daha","Tek seferlik ödeme, abonelik yok","Reklamsız, internetsiz oynanır","Gelecek dünyalar ücretsiz eklenir"],later:"Sonra",demoUnlock:"Kilidi aç (deneme)",soon:"Yakında",
     note:"Bu bir prototip, ödeme alınmaz. Gerçek uygulamada tek seferlik satın alma bu düğmeyle yapılır.",ok:"Tamam",
     noteApp:"Tek seferlik ödeme, Google Play üzerinden yapılır. Abonelik yok.",buy:"Satın al",restoreBuy:"Satın alımı geri yükle",buyWait:"Google Play'e bağlanılıyor…",buyPending:"Ödeme onay bekliyor. Onaylanınca bölümler kendiliğinden açılır.",buyCancel:"Satın alma iptal edildi.",buyErr:"Google Play'e şu an ulaşılamıyor. İnternet bağlantısını kontrol edip yeniden deneyin.",restoreNone:"Bu Google hesabında satın alma bulunamadı.",
     listen:"Dinle",sound:"Sesi aç veya kapat",square:"Kare",undo:"Bir hamle geri al",hint:"İpucu",
@@ -451,14 +451,14 @@ var TXT={
     saveFail:"Data can't be saved in this browser (private window or full storage). Copy the data before the session ends.",hk_title:"How did you help?",hk_repeat:"I repeated the instruction",hk_touch:"I helped with tapping",hk_chess:"I gave a chess hint",hk_late:function(n){return "I had helped before the last answer (question "+n+")";},hk_lateWhich:"How did you help before that answer?",
     gateWait:"Wrong answer. Please wait a moment, then try again.",stepsAria:function(m,p){return "Your steps: "+m+". Crown goal: "+p+".";},langT:"Language",restoreT:"Restore data",restoreP:"Paste player data you copied earlier, or choose a file. It is added as a new profile.",restoreFile:"Choose file",restoreBtn:"Restore",restoreBad:"This doesn't look like Chess Island data. Paste the whole copied text.",restoreOk:function(n,k){return n+" restored ("+k+" levels). Profile selected.";},a_star:"starfish",a_rock:"rock",a_ghost:"shadow",a_flag:"flag",a_can:"can move here",
     helpL:{tapPiece:"By tapping the piece",afterError:"After an error",hintDots:"Hint: squares",hintHand:"Hint: hand"},level:"Level",locked:"locked",
-    palace:"Treasure Cave",full:"Full version",palaceSub:"Rival pieces and mini matches",
+    palace:"Treasure Cave",full:"Full version",palaceSub:"Rival pieces and mini matches",battle:"Pawn Battle",bt_sub:"First to the other side wins",bt_lv:["Easy","Medium","Hard"],bt_vs:function(n){return "Rival: "+n;},bt_you:"Your turn",bt_bot:"Rival's turn",bt_intro:"Pawn battle! Walk your pawns to the other side. The first one to get there wins!",bt_pick:"Tap one of your pink pawns first.",bt_notYours:"That pawn is on the other team! You play with the pink pawns.",bt_wDiag:"I can only go diagonally if there's a rival pawn to catch.",bt_stuckPawn:"This pawn can't move right now. Pick another pawn.",bt_cap:"Got it!",bt_lostOne:"Oh no, we lost a pawn! Let's be careful.",bt_win:"We won! We reached the other side first!",bt_winAll:"We won! We caught all the rival pawns!",bt_lose:"The other team won this time. Let's try again!",bt_draw:"No more moves. It's a draw!",bt_passMe:"Our pawns can't move right now. The rival goes again.",bt_passBot:"The rival can't move. It's our turn again!",bt_winT:"You won!",bt_loseT:"Let's try again!",bt_drawT:"It's a draw!",bt_next:"Next rival",a_mine:"your pawn",a_rival:"rival pawn",
     restart:"Restart",moves:"Moves",climb:"Reach the top",again:"Again",next:"Next",toMap:"Back to map",
     wins:["Well done!","Great job!","Amazing!"],
     best:function(n){return "You finished in "+n+" moves. That's the shortest way!";},
     more:function(n,p){return "You finished in "+n+" moves. Finish in "+p+" to earn three stars.";},
     caught:"Got it! Now I can walk forward.",promoted:"Hooray! I became a queen!",
     gateT:"Grown-ups only",gateP:"This part is for parents. Answer the question to continue.",cancel:"Cancel",
-    perks:["Queen, King, Knight and Pawn worlds: {n} more levels","One-time payment, no subscription","No ads, plays offline","Future worlds added for free"],later:"Later",demoUnlock:"Unlock (demo)",soon:"Coming soon",
+    perks:["Queen, King, Knight and Pawn worlds: {n} more levels","Two more rivals in Pawn Battle","One-time payment, no subscription","No ads, plays offline","Future worlds added for free"],later:"Later",demoUnlock:"Unlock (demo)",soon:"Coming soon",
     note:"This is a prototype, so no payment is taken. In the real app, this button makes the one-time purchase.",ok:"OK",
     noteApp:"One-time payment through Google Play. No subscription.",buy:"Buy",restoreBuy:"Restore purchase",buyWait:"Connecting to Google Play…",buyPending:"Payment is pending. Levels unlock automatically once it is approved.",buyCancel:"Purchase cancelled.",buyErr:"Google Play can't be reached right now. Check the internet connection and try again.",restoreNone:"No purchase found on this Google account.",
     listen:"Listen",sound:"Turn sound on or off",square:"Square",undo:"Undo one move",hint:"Hint",
@@ -665,8 +665,8 @@ function face(y,gap){
     '<ellipse cx="'+(56+gap)+'" cy="'+(y+8)+'" rx="4.5" ry="3" fill="#FF9FB2" opacity=".8"/>'+
     '<path d="M44 '+(y+9)+' Q50 '+(y+15)+' 56 '+(y+9)+'" stroke="'+INK+'" stroke-width="3" fill="none" stroke-linecap="round"/>';
 }
-function pieceSVG(type){
-  var P=PIECES[type],f=P.color,d=P.dark;
+function pieceSVG(type,team){
+  var P=PIECES[team||type],f=P.color,d=P.dark;
   var st='stroke="'+INK+'" stroke-width="3.5" stroke-linejoin="round"';
   var base='<rect x="20" y="82" width="60" height="11" rx="5.5" fill="'+d+'" '+st+'/>';
   var hi='fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="4" stroke-linecap="round"';
@@ -689,7 +689,8 @@ function pieceSVG(type){
       '<path d="M27 28h46l-4 17H31z" fill="'+d+'" '+st+'/><path d="M39 52v22" '+hi+'/>'+face(61);
   }else if(type==="pawn"){
     b='<path d="M30 82C32 64 40 56 50 54C60 56 68 64 70 82Z" fill="'+f+'" '+st+'/>'+
-      '<circle cx="50" cy="35" r="19" fill="'+f+'" '+st+'/><path d="M38 28C39 23 42 20 46 19" '+hi+'/>'+face(32,7);
+      '<circle cx="50" cy="35" r="19" fill="'+f+'" '+st+'/><path d="M38 28C39 23 42 20 46 19" '+hi+'/>'+face(32,7)+
+      (team?'<path d="M36 23Q50 16.5 64 23" stroke="'+d+'" stroke-width="5.5" fill="none" stroke-linecap="round"/>':'');
   }else if(type==="knight"){
     b='<path d="M66 82L64 64C76 56 80 40 74 28C68 18 58 12 48 14L44 4L38 16C30 20 24 28 20 38L14 48C12 54 16 58 22 58C28 58 34 56 38 54C40 64 34 74 30 82Z" fill="'+f+'" '+st+'/>'+
       '<path d="M52 17C64 20 72 30 74 42C75 51 71 58 65 62" stroke="'+d+'" stroke-width="7" fill="none" stroke-linecap="round"/>'+
@@ -913,7 +914,7 @@ function pickVoices(){
 /* ---------- Seslendirme ----------
    Her konuşulan cümlenin sabit bir numarası var (Seslendirme Listesi ile aynı).
    VOICE[numara] doluysa kayıtlı ses çalar; değilse cihazın konuşma motoru devreye girer. */
-var VKEY={"name.rook":1,"intro.rook":2,"name.bishop":3,"intro.bishop":4,"name.queen":5,"intro.queen":6,"name.king":7,"intro.king":8,"name.knight":9,"intro.knight":10,"name.pawn":11,"intro.pawn":12,"wrong.rook":13,"wrong.bishop":14,"wrong.queen":15,"wrong.king":16,"wrong.knight":17,"wrong.pawn":18,"txt.w_blocked":19,"txt.w_rock":20,"txt.w_color":21,"txt.w_pawnBack":22,"txt.w_pawnDiag":23,"txt.w_pawnFront":24,"txt.w_pawnTwo":25,"txt.tapDots":26,"txt.passStar":27,"txt.stuck":28,"txt.dotsOn":29,"txt.tapPiece":30,"txt.hintSay":31,"txt.caught":32,"txt.promoted":33,"txt.sweep":34,"txt.quizQ":35,"txt.quizPick":36,"txt.quizRight":37,"txt.done":38,"txt.p_quizAll":39,"txt.p_quizDone":40,"txt.p_ghost":41,"txt.p_undo":42,"txt.p_promote":43,"txt.p_rocks":44,"txt.p_rook":45,"txt.p_bishop":46,"txt.p_queen":47,"txt.p_king":48,"txt.p_knight":49,"txt.p_pawn":50,"say.rook-sideways":51,"say.rook-turn-corner":52,"say.rook-box-exit":53,"say.rook-stairs":54,"say.rook-ghost-door":55,"say.rook-two-ghosts":56,"say.rook-route-three":57,"say.rook-plan-route":58,"say.rook-corners":59,"say.bishop-two-stars-one-slide":60,"say.bishop-edge-turn":61,"say.bishop-light-squares":62,"say.bishop-slide-turn":63,"say.bishop-dark-start":64,"say.bishop-ghost-hide":65,"say.bishop-three-slides":66,"say.bishop-star-ghost":67,"say.bishop-four-stars":68,"say.queen-diag-then-straight":69,"say.queen-go-around":70,"say.queen-diag-only":71,"say.queen-straight-only":72,"say.queen-ghost-hall":73,"say.queen-corner-guard":74,"say.queen-star-shower":75,"say.queen-center-rocks":76,"say.queen-full-power":77,"say.king-step-step":78,"say.king-diag-shortcut":79,"say.king-wall-around":80,"say.king-two-ways":81,"say.king-ghost-door":82,"say.king-choose-ghost":83,"say.king-three-stars":84,"say.king-weave-rocks":85,"say.king-big-mission":86,"say.knight-two-ls":87,"say.knight-two-jumps":88,"say.knight-walled-garden":89,"say.knight-two-gardens":90,"say.knight-ghost-jump":91,"say.knight-ghosts-stars":92,"say.knight-star-to-star":93,"say.knight-fork-square":94,"say.knight-big-mission":95,"say.pawn-one-step-first":96,"say.pawn-diag-capture":97,"say.pawn-one-or-two":98,"say.pawn-promote":99,"say.pawn-two-shadows":100,"say.pawn-right-shadow":101,"say.pawn-promote-sweep":102,"say.pawn-capture-promote":103,"say.pawn-big-mission":104};
+var VKEY={"name.rook":1,"intro.rook":2,"name.bishop":3,"intro.bishop":4,"name.queen":5,"intro.queen":6,"name.king":7,"intro.king":8,"name.knight":9,"intro.knight":10,"name.pawn":11,"intro.pawn":12,"wrong.rook":13,"wrong.bishop":14,"wrong.queen":15,"wrong.king":16,"wrong.knight":17,"wrong.pawn":18,"txt.w_blocked":19,"txt.w_rock":20,"txt.w_color":21,"txt.w_pawnBack":22,"txt.w_pawnDiag":23,"txt.w_pawnFront":24,"txt.w_pawnTwo":25,"txt.tapDots":26,"txt.passStar":27,"txt.stuck":28,"txt.dotsOn":29,"txt.tapPiece":30,"txt.hintSay":31,"txt.caught":32,"txt.promoted":33,"txt.sweep":34,"txt.quizQ":35,"txt.quizPick":36,"txt.quizRight":37,"txt.done":38,"txt.p_quizAll":39,"txt.p_quizDone":40,"txt.p_ghost":41,"txt.p_undo":42,"txt.p_promote":43,"txt.p_rocks":44,"txt.p_rook":45,"txt.p_bishop":46,"txt.p_queen":47,"txt.p_king":48,"txt.p_knight":49,"txt.p_pawn":50,"say.rook-sideways":51,"say.rook-turn-corner":52,"say.rook-box-exit":53,"say.rook-stairs":54,"say.rook-ghost-door":55,"say.rook-two-ghosts":56,"say.rook-route-three":57,"say.rook-plan-route":58,"say.rook-corners":59,"say.bishop-two-stars-one-slide":60,"say.bishop-edge-turn":61,"say.bishop-light-squares":62,"say.bishop-slide-turn":63,"say.bishop-dark-start":64,"say.bishop-ghost-hide":65,"say.bishop-three-slides":66,"say.bishop-star-ghost":67,"say.bishop-four-stars":68,"say.queen-diag-then-straight":69,"say.queen-go-around":70,"say.queen-diag-only":71,"say.queen-straight-only":72,"say.queen-ghost-hall":73,"say.queen-corner-guard":74,"say.queen-star-shower":75,"say.queen-center-rocks":76,"say.queen-full-power":77,"say.king-step-step":78,"say.king-diag-shortcut":79,"say.king-wall-around":80,"say.king-two-ways":81,"say.king-ghost-door":82,"say.king-choose-ghost":83,"say.king-three-stars":84,"say.king-weave-rocks":85,"say.king-big-mission":86,"say.knight-two-ls":87,"say.knight-two-jumps":88,"say.knight-walled-garden":89,"say.knight-two-gardens":90,"say.knight-ghost-jump":91,"say.knight-ghosts-stars":92,"say.knight-star-to-star":93,"say.knight-fork-square":94,"say.knight-big-mission":95,"say.pawn-one-step-first":96,"say.pawn-diag-capture":97,"say.pawn-one-or-two":98,"say.pawn-promote":99,"say.pawn-two-shadows":100,"say.pawn-right-shadow":101,"say.pawn-promote-sweep":102,"say.pawn-capture-promote":103,"say.pawn-big-mission":104,"txt.bt_intro":105,"txt.bt_pick":106,"txt.bt_notYours":107,"txt.bt_wDiag":108,"txt.bt_stuckPawn":109,"txt.bt_cap":110,"txt.bt_lostOne":111,"txt.bt_win":112,"txt.bt_winAll":113,"txt.bt_lose":114,"txt.bt_draw":115,"txt.bt_passMe":116,"txt.bt_passBot":117};
 var VOICE=window.__VOICE||{},VOICE_EN=window.__VOICE_EN||{},VUNSURE=window.__VOICE_UNSURE||[];
 var T2K=null,T2KL=null;
 function buildT2K(){
@@ -1136,8 +1137,13 @@ function renderMap(){
     html+='</div></article>';
   });
   html+='<article class="world palace" style="--i:'+WORLDS.length+'"><div class="ava"><div style="width:46px;height:46px">'+REGICON.chest+'</div></div><div class="region">'+REGICON.chest+'<span>'+t("palace")+'</span></div>'+
-    '<h2>'+t("palace")+'<span class="tag soon">'+t("soon")+'</span></h2><div class="skill">'+t("palaceSub")+'</div><div class="lvls">';
-  for(var j=1;j<=4;j++)html+='<div class="lv"><button data-soon="1" class="locked" aria-label="'+t("palace")+', '+t("soon")+'">'+LOCK+'</button><div class="mini">'+shellSVG(false)+'</div></div>';
+    '<h2>'+t("battle")+(!prog.full?'<span class="tag">'+t("full")+'</span>':'')+'</h2><div class="skill">'+t("bt_sub")+'</div><div class="lvls">';
+  BT.forEach(function(cfg,j){
+    var C=PIECES[cfg.cap],bo=btUnlocked(j),bp=j>0&&!prog.full;
+    html+='<div class="lv"><button data-bt="'+j+'"'+(bp?' data-gate="1"':'')+' class="'+(bo?"":"locked")+(bp?" paid":"")+'" style="background:'+C.color+';box-shadow:0 4px 0 '+C.dark+'" aria-label="'+t("battle")+', '+t("bt_lv")[j]+(bo?"":", "+(bp?t("full"):t("locked")))+'">'+
+      (bo?(j+1):LOCK)+'</button><div class="mini">'+shellSVG(btWon(j)>0)+'</div></div>';
+  });
+  html+='<div class="lv"><button data-soon="1" class="locked" aria-label="'+t("palace")+', '+t("soon")+'">'+LOCK+'</button><div class="mini">'+shellSVG(false)+'</div></div>';
   html+='</div></article>';
   $("worlds").innerHTML=html;
   randomBlink($("worlds"));
@@ -1146,6 +1152,10 @@ $("worlds").addEventListener("click",function(e){
   var b=e.target.closest("button");if(!b)return;
   if(b.dataset.gate){sfx.tick();openGate();return;}
   if(b.dataset.soon){sfx.wrong();anim(b,[{transform:"rotate(0)"},{transform:"rotate(-14deg)"},{transform:"rotate(12deg)"},{transform:"rotate(0)"}],{duration:320});return;}
+  if(b.dataset.bt!==undefined){
+    if(!btUnlocked(+b.dataset.bt)){sfx.wrong();anim(b,[{transform:"rotate(0)"},{transform:"rotate(-14deg)"},{transform:"rotate(12deg)"},{transform:"rotate(-6deg)"},{transform:"rotate(0)"}],{duration:380});return;}
+    sfx.tick();startBattle(+b.dataset.bt);return;
+  }
   var i=+b.dataset.lv;
   if(!unlocked(i)){sfx.wrong();anim(b,[{transform:"rotate(0)"},{transform:"rotate(-14deg)"},{transform:"rotate(12deg)"},{transform:"rotate(-6deg)"},{transform:"rotate(0)"}],{duration:380});return;}
   sfx.tick();startLevel(i);
@@ -1248,6 +1258,7 @@ function currentMoves(){return genMoves(S.type,S.pos,S.rocks,new Set(S.enemies.k
 function solveNow(){return solveFrom(S.type,S.pos,Array.from(S.stars.keys()),Array.from(S.enemies.keys()),S.rocks,S.n,S.L.goal);}
 function cellLabels(){
   if(!S)return;
+  if(S.battle){btLabels();return;}
   Array.prototype.forEach.call($("cells").children,function(b){
     var c=+b.dataset.c,r=+b.dataset.r,k=key(c,r),parts=[t("square")+" "+"abcdefgh"[c]+(S.n-r)];
     if(c===S.pos[0]&&r===S.pos[1])parts.push(pt(S.type).name);
@@ -1288,6 +1299,7 @@ function showHand(p){
 function hideHand(){if(S&&S.hand){S.hand.remove();S.hand=null;}}
 function hint(){
   if(!S||busy||S.quiz)return;
+  if(S.battle){btHint();return;}
   sfx.tick();
   var path=solveNow();
   if(!path){stuck();return;}
@@ -1360,6 +1372,7 @@ function nearLegal(c,r,e){
   return [[c+dc,r],[c,r+dr],[c+dc,r+dr]].some(function(q){return (q[0]!==c||q[1]!==r)&&inB(q[0],q[1],S.n)&&isLegal(q[0],q[1]);});
 }
 function wrongTap(c,r,evt){
+  if(S.battle){btWrong(c,r);return;}
   shakeNo(S.piece);sfx.wrong();
   var w;
   if(c===undefined)w=pt(S.type).wrong;
@@ -1377,6 +1390,7 @@ function wrongTap(c,r,evt){
 $("cells").addEventListener("click",function(e){
   var b=e.target.closest(".cell");if(!b||!S||busy)return;
   var c=+b.dataset.c,r=+b.dataset.r;
+  if(S.battle){btTap(c,r,e);return;}
   if(S.quiz){quizTap(c,r,e);return;}
   if(c===S.pos[0]&&r===S.pos[1]){
     happyJump(S.piece);hideHand();
@@ -1498,6 +1512,8 @@ function quizTap(c,r,e){
 $("field").addEventListener("pointerdown",function(e){
   if(!S||busy||drag||S.quiz)return;
   var cell=cellAt(e.clientX,e.clientY);
+  /* Piyon Savaşı: basılan kendi piyonu seçilir, böylece doğrudan sürüklenebilir */
+  if(S.battle&&cell&&S.turn==="me"&&S.mine.has(k2(cell))&&!(cell[0]===S.pos[0]&&cell[1]===S.pos[1]))btSelect(cell);
   if(!cell||cell[0]!==S.pos[0]||cell[1]!==S.pos[1])return;
   drag={id:e.pointerId,x0:e.clientX,y0:e.clientY,dx:0,dy:0,moved:false,over:null,size:$("field").getBoundingClientRect().width/S.n};
 });
@@ -1556,6 +1572,7 @@ function animateDrop(p,fx,fy,to){
 
 /* ---------- Hamle ---------- */
 function doMove(to,drop){
+  if(S.battle){btMove(to,drop);return;}
   busy=true;hideHand();$("undoBtn").classList.remove("now");
   if(S.help!=="full")S.dots=false;
   S.hist.push({pos:S.pos.slice(),type:S.type,moves:S.moves,stars:Array.from(S.stars.keys()),enemies:Array.from(S.enemies.keys()),right:S.piece.classList.contains("right")});
@@ -1720,14 +1737,15 @@ function win(){
   speak(title+" "+pr);
   confetti();
 }
-$("againBtn").addEventListener("click",function(){sfx.tick();startLevel(S.i);});
+$("againBtn").addEventListener("click",function(){sfx.tick();if(S.battle){startBattle(S.lvl);return;}startLevel(S.i);});
 $("nextBtn").addEventListener("click",function(){
   sfx.tick();
+  if(S.battle){if(S.nextBt<0)goMap(false);else if(!btUnlocked(S.nextBt))goMap(true);else startBattle(S.nextBt);return;}
   if(S.i>=LEVELS.length-1){goMap(false);return;}
   if(!owned(S.i+1)){goMap(true);return;}
   startLevel(S.i+1);
 });
-$("restartBtn").addEventListener("click",function(){if(S){sfx.tick();startLevel(S.i);}});
+$("restartBtn").addEventListener("click",function(){if(S){sfx.tick();if(S.battle)startBattle(S.lvl);else startLevel(S.i);}});
 $("backBtn").addEventListener("click",function(){sfx.tick();goMap(false);});
 $("sayBtn").addEventListener("click",function(){speak($("bubbleText").textContent);});
 $("soundBtn1").addEventListener("click",toggleSound);
@@ -1738,6 +1756,304 @@ function goMap(gate){
   S=null;
   $("winModal").hidden=true;$("playScreen").hidden=true;$("mapScreen").hidden=false;renderMap();
   if(gate)openGate();
+}
+
+/* ---------- Piyon Savaşı (rakip takıma karşı mini maç) ----------
+   Oyuncu pembe piyonlarla yukarı yürür; rakip takım (bir karakterin renklerinde) aşağı yürür.
+   Kazanma: karşı tarafa ilk ulaşan ya da rakibin bütün piyonlarını yakalayan.
+   Sırası gelen tarafın yapacak hamlesi yoksa oyun berabere biter.
+   Seçili piyon S.pos / S.piece'e yazılır; kendi diğer piyonlar "engel", rakip piyonlar "yakalanabilir"
+   sayıldığı için sürükleme, noktalar ve hata açıklamaları bölümlerdeki kodla ortak çalışır. */
+/* Sırası gelen taraf yürüyemiyorsa: true = sırasını geçer (iki taraf da yürüyemezse berabere), false = oyun hemen berabere biter */
+var BT_PASS=true;
+var BT=[{cap:"rook",files:[2,3,4,5],ai:0},{cap:"knight",files:[1,2,3,4,5,6],ai:1},{cap:"queen",files:[0,1,2,3,4,5,6,7],ai:2}];
+function btRec(){var p=PL();if(!p.bt||typeof p.bt!=="object")p.bt={};return p.bt;}
+function btWon(j){return +(btRec()["w"+j]||0);}
+function btUnlocked(j){return j===0||(!!prog.full&&btWon(j-1)>0);}
+function cleanBt(src){var o={};if(src&&typeof src==="object")Object.keys(src).forEach(function(k){var v=Math.floor(+src[k]);if(/^[wld][0-2]$/.test(k)&&isFinite(v)&&v>0)o[k]=v;});return o;}
+/* Tahta: 64 kare; 1 = oyuncu (yukarı yürür), 2 = rakip (aşağı yürür) */
+function btGen(b,side){
+  var dir=side===1?-8:8,home=side===1?6:1,opp=3-side,caps=[],quiet=[];
+  for(var i=0;i<64;i++){
+    if(b[i]!==side)continue;
+    var r=i>>3,c=i&7,f=i+dir;
+    if(f<0||f>63)continue;
+    if(c>0&&b[f-1]===opp)caps.push([i,f-1]);
+    if(c<7&&b[f+1]===opp)caps.push([i,f+1]);
+    if(b[f]===0){quiet.push([i,f]);if(r===home&&b[f+dir]===0)quiet.push([i,f+dir]);}
+  }
+  return caps.concat(quiet);
+}
+/* Rakip açısından puan: taş sayısı, ilerleme ve önü açık piyonlar */
+function btEval(b){
+  var s=0;
+  for(var i=0;i<64;i++){
+    var v=b[i];if(!v)continue;
+    var r=i>>3,c=i&7,free=true,y,x;
+    if(v===2){
+      for(y=r+1;y<8&&free;y++)for(x=Math.max(0,c-1);x<=Math.min(7,c+1);x++)if(b[y*8+x]===1){free=false;break;}
+      s+=10+(r-1)*(r-1)*.6+(free?6+(r-1)*2:0);
+    }else{
+      for(y=r-1;y>=0&&free;y--)for(x=Math.max(0,c-1);x<=Math.min(7,c+1);x++)if(b[y*8+x]===2){free=false;break;}
+      s-=10+(6-r)*(6-r)*.6+(free?6+(6-r)*2:0);
+    }
+  }
+  return s;
+}
+var btNodes=0,btStop=0,btOut=false;
+function btNow(){return (window.performance&&performance.now)?performance.now():Date.now();}
+function btSearch(b,side,depth,a,be){
+  var i,n1=0,n2=0;
+  for(i=0;i<8;i++){if(b[i]===1)return -1000-depth;if(b[56+i]===2)return 1000+depth;}
+  for(i=8;i<56;i++){if(b[i]===1)n1++;else if(b[i]===2)n2++;}
+  if(!n1)return 1000+depth;
+  if(!n2)return -1000-depth;
+  var mv=btGen(b,side);
+  if(!mv.length){
+    /* Yürüyemeyen taraf sırasını geçer; iki taraf da yürüyemiyorsa berabere */
+    if(!BT_PASS||!btGen(b,3-side).length)return 0;
+    return depth<=0?btEval(b):btSearch(b,3-side,depth-1,a,be);
+  }
+  if(depth<=0)return btEval(b);
+  if((++btNodes&1023)===0&&btNow()>btStop)btOut=true;
+  if(btOut)return 0;
+  var best=side===2?-1e9:1e9;
+  for(i=0;i<mv.length;i++){
+    var m=mv[i],cap=b[m[1]];b[m[1]]=side;b[m[0]]=0;
+    var v=btSearch(b,3-side,depth-1,a,be);
+    b[m[0]]=side;b[m[1]]=cap;
+    if(btOut)return 0;
+    if(side===2){if(v>best)best=v;if(best>a)a=best;}
+    else{if(v<best)best=v;if(best<be)be=best;}
+    if(a>=be)break;
+  }
+  return best;
+}
+/* ai: 0 kolay (çoğunlukla rastgele), 1 orta (2 hamle ileri), 2 zor (süre yettiğince 8 hamleye kadar), 3 ipucu (4 hamle) */
+function btPick(b,side,ai){
+  var mv=btGen(b,side);
+  if(!mv.length)return null;
+  if(ai===0){
+    var goal=side===2?7:0;
+    var wins=mv.filter(function(m){return (m[1]>>3)===goal;});
+    if(wins.length&&Math.random()<.7)return wins[Math.floor(Math.random()*wins.length)];
+    var caps=mv.filter(function(m){return b[m[1]]!==0;});
+    var pool=(caps.length&&Math.random()<.5)?caps:mv;
+    return pool[Math.floor(Math.random()*pool.length)];
+  }
+  var maxD=ai===1?2:(ai===2?8:4),tol=ai===1?3:.01,pick=mv[0],sc=null;
+  btStop=btNow()+(ai===2?400:250);btOut=false;btNodes=0;
+  /* Derinlik adım adım artar; süre dolarsa son tamamlanan derinliğin sonucu kullanılır */
+  for(var d=1;d<=maxD;d++){
+    var cur=[],best=-1e9;
+    /* önceki derinlikte iyi çıkan hamleler önce denenir */
+    var order=mv.map(function(_,i){return i;});
+    if(sc)order.sort(function(x,y){return sc[y]-sc[x];});
+    for(var q=0;q<order.length;q++){
+      var m=mv[order[q]],cap=b[m[1]];b[m[1]]=side;b[m[0]]=0;
+      var v=btSearch(b,3-side,d-1,-1e9,1e9);
+      b[m[0]]=side;b[m[1]]=cap;
+      if(btOut)break;
+      if(side===1)v=-v;
+      cur[order[q]]=v;if(v>best)best=v;
+    }
+    if(btOut)break;
+    sc=cur;
+    var top=mv.filter(function(_,i){return sc[i]>=best-tol;});
+    pick=top[Math.floor(Math.random()*top.length)];
+    if(best>900||best<-900)break;
+  }
+  return pick;
+}
+function btBoard(){
+  var b=[];for(var i=0;i<64;i++)b.push(0);
+  S.mine.forEach(function(_,k){var p=unkey(k);b[p[1]*8+p[0]]=1;});
+  S.enemies.forEach(function(_,k){var p=unkey(k);b[p[1]*8+p[0]]=2;});
+  return b;
+}
+function btPawn(p,team){
+  var el=document.createElement("div");el.className="it piece"+(team?" rival":"");
+  el.innerHTML='<div class="ground"><div class="shadow"></div><div class="body"><div class="flip">'+pieceSVG("pawn",team)+'</div></div></div>';
+  place(el,p,8);$("layer").appendChild(el);return el;
+}
+function btHud(){
+  var me=S.turn!=="bot";
+  $("undoBtn").disabled=true;$("hintBtn").disabled=S.over||S.turn!=="me";
+  $("goal").innerHTML=pieceSVG("pawn",me?null:S.cfg.cap)+"<span>"+t(me?"bt_you":"bt_bot")+"</span>";$("goal").dataset.turn=S.turn;
+}
+function btLabels(){
+  Array.prototype.forEach.call($("cells").children,function(b){
+    var c=+b.dataset.c,r=+b.dataset.r,k=key(c,r),parts=[t("square")+" "+"abcdefgh"[c]+(8-r)];
+    if(S.mine.has(k))parts.push(t("a_mine"));
+    if(S.enemies.has(k))parts.push(t("a_rival"));
+    if(b.classList.contains("can"))parts.push(t("a_can"));
+    b.setAttribute("aria-label",parts.join(", "));
+  });
+}
+function startBattle(j){
+  closeQuiz();closeSheet();stopVoice();
+  var cfg=BT[j];
+  S={battle:true,lvl:j,cfg:cfg,n:8,type:"pawn",pos:[-1,-1],piece:null,moves:0,ep:0,hist:[],hand:null,help:"full",dots:false,quiz:false,captured:0,
+     rocks:new Set(),stars:new Map(),enemies:new Map(),mine:new Map(),turn:"wait",over:false,lost:0,nextBt:-1,passRun:0};
+  busy=true;drag=null;
+  $("mapScreen").hidden=true;$("playScreen").hidden=false;$("winModal").hidden=true;$("gateModal").hidden=true;
+  $("pName").textContent=t("battle");
+  $("pLevel").textContent=t("bt_vs")(pt(cfg.cap).name)+" · "+t("bt_lv")[j];
+  $("moves").parentNode.hidden=true;$("adultBtn").hidden=true;$("undoBtn").classList.remove("now");
+  $("talkAva").innerHTML='<div class="body" style="position:static;width:58px;height:58px">'+pieceSVG("pawn")+'</div>';
+  var cells=$("cells"),ch="";
+  cells.style.gridTemplateColumns="repeat(8,1fr)";cells.style.gridTemplateRows="repeat(8,1fr)";
+  for(var r=0;r<8;r++)for(var c=0;c<8;c++){
+    ch+='<button class="cell'+((r+c)%2?" d":"")+'" data-c="'+c+'" data-r="'+r+'">'+(c===0?'<span class="cr">'+(8-r)+'</span>':'')+(r===7?'<span class="cf">'+"abcdefgh"[c]+'</span>':'')+'</button>';
+  }
+  cells.innerHTML=ch;
+  $("layer").innerHTML="";
+  var drop=RM?0:520;
+  cfg.files.forEach(function(c,k){
+    var a=btPawn([c,6]),b=btPawn([c,1],cfg.cap);
+    S.mine.set(key(c,6),a);S.enemies.set(key(c,1),b);
+    [a,b].forEach(function(el){
+      anim(el.querySelector(".body"),[{offset:0,transform:tf(-260,.9,1.12),opacity:0},{offset:.1,transform:tf(-240,.9,1.12),opacity:1},{offset:.7,transform:tf(4,1.2,.78)},{offset:.86,transform:tf(-10,.95,1.06)},{offset:1,transform:tf(0,1,1)}],{duration:drop,delay:k*70,fill:"backwards"});
+      anim(el.querySelector(".shadow"),[{transform:"scale(.1)",opacity:0},{offset:.7,transform:"scale(1.2)",opacity:1},{transform:"scale(1)",opacity:1}],{duration:drop,delay:k*70,fill:"backwards"});
+    });
+    if(!RM)setTimeout(function(){sfx.pop(k);},k*70+drop*.7);
+  });
+  randomBlink($("layer"));
+  var tok=S,text=t("bt_intro");
+  setBubble(text);btHud();showMoves();speak(text);
+  setTimeout(function(){if(S===tok)btMyTurn();},drop+cfg.files.length*70+150);
+}
+/* Oyuncunun sırası: yürüyebilen piyonlar hafifçe zıplayarak "sıra sende" der */
+function btMyTurn(){
+  S.turn="me";S.pos=[-1,-1];S.piece=null;S.dots=false;
+  var mv=btGen(btBoard(),1);
+  if(!mv.length){
+    if(!BT_PASS||!btGen(btBoard(),2).length){btEnd("draw");return;}
+    /* Art arda geçişlerde açıklama yalnızca ilkinde seslendirilir */
+    var pm=t("bt_passMe"),tok=S,again=S.passRun>0;S.passRun++;S.turn="wait";btHud();
+    if(!again){setBubble(pm,true);speak(pm);}
+    setTimeout(function(){if(S===tok)btBot(again);},again?150:(RM?600:1500));
+    return;
+  }
+  S.passRun=0;busy=false;btHud();showMoves();
+  var seen={},k=0;
+  mv.forEach(function(m){
+    if(seen[m[0]])return;seen[m[0]]=1;
+    var el=S.mine.get(key(m[0]&7,m[0]>>3));
+    if(el)anim(el.querySelector(".body"),[{transform:tf(0,1,1)},{offset:.4,transform:tf(-16,.96,1.07)},{offset:.8,transform:tf(2,1.05,.95)},{transform:tf(0,1,1)}],{duration:420,delay:(k++)*60});
+  });
+}
+function btSelect(cell){
+  var k=k2(cell),el=S.mine.get(k);if(!el)return false;
+  hideHand();
+  S.pos=cell.slice();S.piece=el;
+  S.rocks=new Set(Array.from(S.mine.keys()).filter(function(x){return x!==k;}));
+  S.dots=true;showMoves();
+  return true;
+}
+function btTap(c,r,e){
+  if(S.over||S.turn!=="me")return;
+  var k=key(c,r),m;
+  if(S.mine.has(k)){
+    btSelect([c,r]);happyJump(S.piece);
+    if(!currentMoves().length){m=t("bt_stuckPawn");setBubble(m,true);speak(m);}
+    return;
+  }
+  if(S.pos[0]<0){
+    sfx.wrong();m=t(S.enemies.has(k)?"bt_notYours":"bt_pick");setBubble(m,true);speak(m);
+    S.mine.forEach(function(el){anim(el.querySelector(".body"),[{transform:tf(0,1,1)},{offset:.4,transform:tf(-16,.96,1.07)},{transform:tf(0,1,1)}],{duration:420});});
+    return;
+  }
+  if(!isLegal(c,r)){btWrong(c,r);return;}
+  btMove([c,r]);
+}
+function btWrong(c,r){
+  if(!S.piece||S.pos[0]<0)return;
+  shakeNo(S.piece);sfx.wrong();
+  var k=whyKey("pawn",S.pos,S.rocks,8,c,r),w;
+  if(k==="rule")w=pt("pawn").wrong;
+  else if(k==="w_pawnDiag")w=t("bt_wDiag");
+  else w=t(k);
+  if(currentMoves().length)w+=" "+t("tapDots");
+  setBubble(w,true);speak(w);
+}
+function btPoof(el,p){
+  sfx.poof();
+  var a=anim(el.querySelector(".body"),[{transform:tf(0,1,1),opacity:1},{offset:.3,transform:tf(4,1.25,.7),opacity:1},{transform:tf(-50,.2,1.6),opacity:0}],{duration:420,easing:"ease-in",fill:"forwards"});
+  var sh=el.querySelector(".shadow");if(sh)sh.style.opacity="0";
+  dust(p,9,true);
+  if(a)a.onfinish=function(){el.remove();};else el.remove();
+}
+function btMove(to,drop){
+  busy=true;hideHand();
+  var from=S.pos,el=S.piece,tok=S,tk=k2(to),dx=from[0]-to[0],dy=from[1]-to[1];
+  S.mine.delete(k2(from));S.mine.set(tk,el);S.moves++;
+  var victim=S.enemies.get(tk);if(victim)S.enemies.delete(tk);
+  S.pos=to;S.dots=false;S.turn="wait";showMoves();btHud();
+  place(el,to,8);
+  var dur=drop?animateDrop(el,drop.fx,drop.fy,to):animateMove(el,"pawn",dx,dy,to);
+  setTimeout(function(){
+    if(S!==tok)return;
+    var wait=0;
+    if(victim){btPoof(victim,to);wait=450;setBubble(t("bt_cap"));speak(t("bt_cap"));}
+    if(to[1]===0||!S.enemies.size){
+      burst(to,["#FFC83D","#EE6FA0","#9B6BE0","#fff"],14,320);sparkle(to,8);happyJump(el);
+      setTimeout(function(){if(S===tok)btEnd("win",to[1]===0?"bt_win":"bt_winAll");},wait+750);
+      return;
+    }
+    setTimeout(function(){if(S===tok)btBot();},wait);
+  },dur);
+}
+function btBot(quick){
+  var tok=S;
+  S.turn="bot";S.pos=[-1,-1];S.piece=null;btHud();
+  setTimeout(function(){
+    if(S!==tok||S.over)return;
+    var m=btPick(btBoard(),2,S.cfg.ai);
+    if(!m){
+      if(!BT_PASS||!btGen(btBoard(),1).length){btEnd("draw");return;}
+      var pb=t("bt_passBot");setBubble(pb);speak(pb);
+      setTimeout(function(){if(S===tok)btMyTurn();},RM?400:1100);
+      return;
+    }
+    var from=[m[0]&7,m[0]>>3],to=[m[1]&7,m[1]>>3],tk=k2(to),el=S.enemies.get(k2(from));
+    S.enemies.delete(k2(from));S.enemies.set(tk,el);
+    var victim=S.mine.get(tk);if(victim)S.mine.delete(tk);
+    S.piece=el;place(el,to,8);
+    var dur=animateMove(el,"pawn",from[0]-to[0],from[1]-to[1],to);
+    setTimeout(function(){
+      if(S!==tok)return;
+      S.piece=null;
+      var wait=0,end=to[1]===7||!S.mine.size;
+      if(victim){btPoof(victim,to);S.lost++;wait=450;if(!end&&S.lost===1){var lm=t("bt_lostOne");setBubble(lm,true);speak(lm);}}
+      if(end){setTimeout(function(){if(S===tok)btEnd("lose");},wait+400);return;}
+      setTimeout(function(){if(S===tok)btMyTurn();},wait);
+    },dur);
+  },(RM||quick)?250:rnd(600,950));
+}
+function btHint(){
+  if(S.over||S.turn!=="me")return;
+  sfx.tick();
+  var m=btPick(btBoard(),1,3);if(!m)return;
+  btSelect([m[0]&7,m[0]>>3]);happyJump(S.piece);showHand([m[1]&7,m[1]>>3]);
+  setBubble(t("hintSay"));speak(t("hintSay"));
+}
+function btEnd(res,why){
+  var j=S.lvl,rec=btRec(),f=res==="win"?"w":(res==="lose"?"l":"d");
+  S.over=true;S.turn="end";busy=true;hideHand();S.dots=false;showMoves();btHud();
+  rec[f+j]=(+rec[f+j]||0)+1;save();
+  var msg=t(res==="win"?(why||"bt_win"):(res==="lose"?"bt_lose":"bt_draw"));
+  $("winAva").innerHTML=pieceSVG("pawn");randomBlink($("winAva"));
+  $("winTitle").textContent=t(res==="win"?"bt_winT":(res==="lose"?"bt_loseT":"bt_drawT"));
+  $("winStars").innerHTML=res==="win"?shellSVG(true).replace("<svg",'<svg class="bloom"'):"";
+  $("winText").textContent=msg;
+  var fx=$("winSteps");fx.hidden=true;fx.innerHTML="";
+  S.nextBt=(res==="win"&&j<BT.length-1)?j+1:-1;
+  $("againBtn").textContent=t("again");
+  $("nextBtn").textContent=S.nextBt>=0?t("bt_next"):t("toMap");
+  $("winModal").hidden=false;
+  setBubble(msg);speak(msg);
+  if(res==="win"){sfx.win();sfx.pop(3);confetti();}else tone(330,.25,"triangle",.08,0,250);
 }
 
 /* ---------- Konfeti ---------- */
@@ -1976,7 +2292,7 @@ function renderPanel(view){
     ids.forEach(function(id){var q=prog.players[id];h+='<button class="sbtn'+(id===pid?' on':'')+'" data-dp="'+id+'">'+esc(q.name)+'</button>';});
     h+='</div>'+summaryHTML(pl);
     if(prog.legacyV1)h+='<p class="note">'+t("sum").legacy+'</p>';
-    var out={app:"satranc-adasi",format:4,exported:new Date().toISOString(),player:{name:pl.name},done:pl.done,log:pl.log};
+    var out={app:"satranc-adasi",format:4,exported:new Date().toISOString(),player:{name:pl.name},done:pl.done,log:pl.log,bt:cleanBt(pl.bt)};
     h+='<textarea id="jsonOut" readonly>'+esc(JSON.stringify(out))+'</textarea>';
     h+='<div class="row"><button class="btn soft" data-back="1">'+t("back")+'</button><button class="btn" data-copy="1">'+t("copy")+'</button></div>';
     h+='<div class="sec"><h4>'+t("restoreT")+'</h4><p class="small note">'+t("restoreP")+'</p><textarea id="jsonIn" placeholder="{&quot;app&quot;:&quot;satranc-adasi&quot;, ...}"></textarea>'+
@@ -2018,7 +2334,7 @@ $("panelCard").addEventListener("click",function(e){
     var known={};LEVELS.forEach(function(L){known[L.id]=1;});
     var done={};Object.keys(d.done).forEach(function(k){var v=+d.done[k];if(known[k]&&(v===1||v===3))done[k]=v;});
     var n=Object.keys(prog.players).length,id="p"+Date.now().toString(36),nm=String((d.player&&d.player.name)||t("player")).slice(0,16);
-    var fs=freeSlot();prog.players[id]={name:nm,color:PCOL[fs],avatar:AVA[fs],done:done,log:cleanLog(d.log),created:new Date().toISOString(),restored:typeof d.exported==="string"?d.exported.slice(0,40):true};
+    var fs=freeSlot();prog.players[id]={name:nm,color:PCOL[fs],avatar:AVA[fs],done:done,log:cleanLog(d.log),bt:cleanBt(d.bt),created:new Date().toISOString(),restored:typeof d.exported==="string"?d.exported.slice(0,40):true};
     prog.current=id;save();msg.textContent=t("restoreOk")(nm,Object.keys(done).length);return;
   }
   if(b.dataset.vlist){renderPanel("voice");return;}
