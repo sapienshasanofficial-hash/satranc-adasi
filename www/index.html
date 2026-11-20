@@ -409,7 +409,7 @@ var TXT={
     add:"Ekle ve seç",reset:"Sıfırla",resetSure:"Evet, sıfırla",codeTip:"Denemelerde gerçek ad yerine Çocuk A, Çocuk B gibi kodlar kullanın. Yeni eklenen profil hemen seçilir.",namePh:"Kod, örn. Çocuk A",del:"Sil",delSure:"Evet, sil",active:"oynuyor",trial:"Deneme modu",trialOn:"Açık",trialOff:"Kapalı",
     trialDesc:"Oyunda el simgeli bir düğme çıkar. Çocuğa yardım ettiğinizde basın; o bölüme not edilir.",
     data:"Deneme verileri",voiceT:"Seslendirme",voiceList:"Cümleleri dinle",playAll:"Sırayla çal",stopAll:"Durdur",wrongMark:"Yanlış",flagsCopy:"İşaretlileri kopyala",flagsNone:"Henüz işaretli cümle yok.",voiceHelp:"Her cümleyi dinleyip yazıyla karşılaştırabilirsiniz. Beğenmediğiniz cümlede Yanlış'a basın, sonra işaretlileri kopyalayıp gönderin; o cümleyi yeniden üretiriz.",voiceS:function(a,b,c){return "Türkçe cümleler: "+a+" / "+b+". İngilizce cümleler: "+c+" / "+b+". Seslendirme: Sapiens Hasan. Kaydı olmayan cümlelerde cihazın sesi kullanılır.";},aiNote:"Seslendirme: Sapiens Hasan",show:"Göster",back:"Geri",close:"Kapat",copy:"Verileri kopyala",copied:"Kopyalandı",copyFail:"Kopyalanamadı. Metni seçip kopyalayın.",
-    fullBtn:"Tam sürümü göster",helped:"Not alındı",adultHelp:"Yetişkin yardımı (deneme notu)",
+    fullBtn:"Tam sürümü göster",revT:"İnceleme kodu",revPh:"Kod",revBtn:"Kilidi aç",revOk:"Tam sürüm bu cihazda açıldı.",revBad:"Kod geçersiz.",helped:"Not alındı",adultHelp:"Yetişkin yardımı (deneme notu)",
     sum:{levels:"Tamamlanan bölüm",crowns:"Taç",tries:"Bölüm başlatma",undo:"Geri alma",adult:"Yetişkin yardımı",touch:"Dokunma şüphesi",touchLv:"Dokunma şüphesi (bölümler)",touchQ:"Dokunma şüphesi (testler)",unaided:"yardımsız",aidedL:"yardımlı",quizNote:"İlk denemede doğru / cevaplanan soru. Yardımlı: cevaptan önce yetişkin yardımı not edilen sorular.",touchNote:"Yanlış dokunuş doğru kareye çok yakındı. Bu dokunuşlar kural hatalarına da dahildir, ayrıca işaretlenir.",adultDone:"Yetişkin yardımıyla tamamlanan deneme",aided:function(n){return n+" soru yetişkin yardımıyla";},quiz:"Testlerde ilk denemede doğru",errs:"Yanlış seçimler (hepsi)",helps:"Açılan yardım",none:"Henüz yok",legacy:"Eski bir kayıt bulundu ama hangi bölümlere ait olduğu kesin olmadığı için aktarılmadı."},
     errL:{w_blocked:"Engelin üstünden geçmeye çalıştı",w_rock:"Kayalı kareyi seçti",w_color:"Fil: başka renk kare",w_pawnBack:"Piyon: geri ya da yana",w_pawnDiag:"Piyon: boş çapraz",w_pawnFront:"Piyon: önü kapalıyken ileri",w_pawnTwo:"Piyon: ilk adım dışında iki kare",
       rook_rule:"Kale: hareket kuralı",bishop_rule:"Fil: hareket kuralı",queen_rule:"Vezir: hareket kuralı",king_rule:"Şah: hareket kuralı",knight_rule:"At: hareket kuralı",pawn_rule:"Piyon: hareket kuralı"},
@@ -444,7 +444,7 @@ var TXT={
     add:"Add & select",reset:"Reset",resetSure:"Yes, reset",codeTip:"For trials, use codes like Child A, Child B instead of real names. A new profile is selected right away.",namePh:"Code, e.g. Child A",del:"Delete",delSure:"Yes, delete",active:"playing",trial:"Trial mode",trialOn:"On",trialOff:"Off",
     trialDesc:"A hand button appears in the game. Tap it whenever you help the child; it's noted for that level.",
     data:"Trial data",voiceT:"Voice-over",voiceList:"Listen to lines",playAll:"Play in order",stopAll:"Stop",wrongMark:"Wrong",flagsCopy:"Copy marked lines",flagsNone:"No lines marked yet.",voiceHelp:"Listen to each line and compare it with the text. Tap Wrong on any line you don't like, then copy the marked lines and send them; that line can be regenerated.",voiceS:function(a,b,c){return "Turkish lines: "+a+" / "+b+". English lines: "+c+" / "+b+". Voice-over: Sapiens Hasan. Lines without a recording use the device voice.";},aiNote:"Voice-over: Sapiens Hasan",show:"Show",back:"Back",close:"Close",copy:"Copy data",copied:"Copied",copyFail:"Couldn't copy. Select the text and copy it.",
-    fullBtn:"Show full version",helped:"Noted",adultHelp:"Adult help (trial note)",
+    fullBtn:"Show full version",revT:"Review code",revPh:"Code",revBtn:"Unlock",revOk:"The full version is now unlocked on this device.",revBad:"Invalid code.",helped:"Noted",adultHelp:"Adult help (trial note)",
     sum:{levels:"Levels completed",crowns:"Crowns",tries:"Level starts",undo:"Undos",adult:"Adult help",touch:"Possible touch slips",touchLv:"Possible touch slips (levels)",touchQ:"Possible touch slips (quizzes)",unaided:"unaided",aidedL:"aided",quizNote:"Right on first try / questions answered. Aided: an adult help note was made before the answer.",touchNote:"The wrong tap was very close to a correct square. These taps are also included in rule errors and flagged separately.",adultDone:"Attempts completed with adult help",aided:function(n){return n+" with adult help";},quiz:"Quiz answers right on first try",errs:"Wrong choices (all)",helps:"Help opened",none:"None yet",legacy:"An old save was found but not transferred, because it isn't certain which levels it belongs to."},
     errL:{w_blocked:"Tried to pass an obstacle",w_rock:"Chose a rock square",w_color:"Bishop: other color square",w_pawnBack:"Pawn: back or sideways",w_pawnDiag:"Pawn: empty diagonal",w_pawnFront:"Pawn: forward when blocked",w_pawnTwo:"Pawn: two squares after first move",
       rook_rule:"Rook: movement rule",bishop_rule:"Bishop: movement rule",queen_rule:"Queen: movement rule",king_rule:"King: movement rule",knight_rule:"Knight: movement rule",pawn_rule:"Pawn: movement rule"},
@@ -2120,7 +2120,7 @@ function ownsFull(list){return (list||[]).some(function(p){return p&&p.productId
 function syncPurchases(quiet){
   if(!IAP)return Promise.resolve(null);
   return IAP.getPurchases({productType:"inapp"}).then(function(r){
-    var own=ownsFull(r&&r.purchases);
+    var own=ownsFull(r&&r.purchases)||!!prog.codeFull;
     if(own!==!!prog.full){prog.full=own;save();renderMap();}
     return own;
   }).catch(function(){return null;});
@@ -2274,7 +2274,8 @@ function renderPanel(view){
     h+='<div class="sec"><h4>'+t("trial")+'</h4><p class="small note">'+t("trialDesc")+'</p><button class="sbtn'+(prog.trial?' on':'')+'" data-trial="1">'+t("trial")+': '+(prog.trial?t("trialOn"):t("trialOff"))+'</button></div>';
     h+='<div class="sec"><h4>'+t("voiceT")+'</h4><p class="small note">'+t("voiceS")(voiceCount(),Object.keys(VKEY).length,Object.keys(VOICE_EN).length)+'</p>'+(voiceCount()?'<button class="sbtn" data-vlist="1">'+t("voiceList")+'</button>':'')+'</div>';
     h+='<div class="sec"><h4>'+t("data")+'</h4><button class="sbtn" data-data="1">'+t("show")+'</button></div>';
-    h+='<div class="sec"><h4>'+t("full")+'</h4><button class="sbtn" data-full="1">'+t("fullBtn")+'</button></div>';
+    h+='<div class="sec"><h4>'+t("full")+'</h4><button class="sbtn" data-full="1">'+t("fullBtn")+'</button>'+
+      '<p class="small note" style="margin-top:12px">'+t("revT")+'</p><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><input id="revCode" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="'+t("revPh")+'" style="flex:1;min-width:0;max-width:220px;font:inherit;padding:8px 12px;border-radius:12px;border:2px solid #D8D4DF"><button class="sbtn" data-revcode="1">'+t("revBtn")+'</button></div><p class="small note" id="revMsg"></p></div>';
     h+='<div class="row"><button class="btn" data-close="1">'+t("close")+'</button></div>';
   }else if(view==="voice"){
     var flags=prog.vflags||{},rows=VLINES();
@@ -2307,6 +2308,14 @@ $("panelCard").addEventListener("change",function(e){
 $("panelCard").addEventListener("click",function(e){
   var b=e.target.closest("button");if(!b)return;
   if(b.dataset.close){stopVSeq();$("panelModal").hidden=true;delAsk=null;resetAsk=null;renderMap();return;}
+  if(b.dataset.revcode){
+    /* Google Play incelemesi için: kod girilince tam sürüm bu cihazda açılır (satın alma senkronu bunu geri almaz) */
+    var rc=String(($("revCode")||{}).value||"").trim().toUpperCase(),hh=0x811c9dc5;
+    for(var ri=0;ri<rc.length;ri++){hh^=rc.charCodeAt(ri);hh=Math.imul(hh,0x01000193)>>>0;}
+    var okc=hh===2088445081;
+    if(okc){prog.codeFull=true;prog.full=true;save();sfx.win();}else sfx.wrong();
+    $("revMsg").textContent=okc?t("revOk"):t("revBad");return;
+  }
   if(b.dataset.del){delAsk=b.dataset.del;resetAsk=null;renderPanel("main");return;}
   if(b.dataset.reset){resetAsk=b.dataset.reset;delAsk=null;renderPanel("main");return;}
   if(b.dataset.resetok){var rp=prog.players[b.dataset.resetok];rp.done={};rp.log={};rp.reset=new Date().toISOString();resetAsk=null;save();renderPanel("main");return;}
