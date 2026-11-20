@@ -1,0 +1,3 @@
+derleme=6
+versionCode=6
+kaynak=4038b6362a2d8f018d28f9acb2208ba3229f9a73
